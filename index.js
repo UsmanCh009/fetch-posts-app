@@ -11,7 +11,7 @@ app.get('/api/posts', async (req, res) => {
         const response = await axios.get(apiUrl);
         res.json(response.data);
     } catch (error) {
-        res.status(500).json({ message: 'Error fetching posts', error: error.message });
+        res.status(500).json({ message: 'Error fetching postss', error: error.message });
     }
 });
 
